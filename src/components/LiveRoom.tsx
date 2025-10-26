@@ -86,7 +86,7 @@ export function LiveRoom({ vibe, roomCode, onEndSession }: LiveRoomProps) {
   } = useAIQuestions({
     vibe,
     getTranscript: getRecentTranscript,
-    enabled: isConnected && transcript.length > 0,
+    enabled: isConnected
   });
 
   const vibeColors = {
