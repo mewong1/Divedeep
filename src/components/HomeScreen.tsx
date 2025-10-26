@@ -4,6 +4,7 @@ import { Input } from './ui/input';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 import { Sparkles, Users, MessageCircle, Brain } from 'lucide-react';
 import { motion } from 'motion/react';
+import logo from '../assets/logo.png';  // Adjust filename to match yours
 
 type Vibe = 'fun' | 'thoughtful' | 'deep' | 'mixed';
 
@@ -44,13 +45,13 @@ export function HomeScreen({ onStartRoom, onJoinRoom }: HomeScreenProps) {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-            className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 mb-4"
+            className="inline-flex items-center justify-center w-30 h-30 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 mb-4"
           >
-            <MessageCircle className="w-10 h-10 text-white" />
+            <img src={logo} alt="DiveDeep Logo" className="w-20 h-20" />
           </motion.div>
           
           <h1 className="text-white text-6xl">
-            Let's Get Deeper
+            DiveDeep
           </h1>
           
           <p className="text-purple-200 text-xl">
